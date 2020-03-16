@@ -11,6 +11,7 @@
         <filename>helper.php</filename>
         <filename>tmpl/default.php</filename>
         <filename>tmpl/index.html</filename>
+        <folder>sql</folder>
     </files>
     <config>
 		<fields name="params">
@@ -31,19 +32,19 @@
 	         <file driver="sqlazure" charset="utf8">sql/sqlazure/install.sqlazure.utf8.sql</file>
 	     </sql>
 	</install>
-	 
+
 	<uninstall>
 	     <sql>
 	         <file driver="mysql" charset="utf8">sql/mysql/uninstall.mysql.utf8.sql</file>
 	         <file driver="sqlazure" charset="utf8">sql/sqlazure/uninstall.sqlazure.utf8.sql</file>
 	     </sql>
 	</uninstall>
-	 
-	<update> 
+
+	<update>
 	    <schemas>
-	        <schemapath type="mysql">sql/mysql/updates</schemapath> 
-		<schemapath type="sqlazure">sql/sqlazure/updates</schemapath> 
-	    </schemas> 
+	        <schemapath type="mysql">sql/mysql/updates</schemapath>
+		<schemapath type="sqlazure">sql/sqlazure/updates</schemapath>
+	    </schemas>
 	</update>
-    
+
 </extension>
