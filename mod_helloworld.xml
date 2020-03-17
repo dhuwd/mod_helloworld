@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="3.1.0" client="site" method="upgrade">
     <name>Hello, World!</name>
-    <author>John Doe</author>
+    <author>Huw Davies</author>
     <version>1.0.0</version>
     <description>A simple Hello, World! module.</description>
     <files>
@@ -12,6 +12,7 @@
         <filename>tmpl/default.php</filename>
         <filename>tmpl/index.html</filename>
         <folder>sql</folder>
+        <folder>updates</folder>
     </files>
     <config>
 		<fields name="params">
@@ -42,8 +43,8 @@
 
 	<update>
 	    <schemas>
-	        <schemapath type="mysql">sql/mysql/updates</schemapath>
-		<schemapath type="sqlazure">sql/sqlazure/updates</schemapath>
+	       <schemapath type="mysql">sql/mysql/updates</schemapath>
+		     <schemapath type="sqlazure">sql/sqlazure/updates</schemapath>
 	    </schemas>
 	</update>
 
